@@ -1,13 +1,21 @@
 {
-  "name": "portfolio project",
+  "name": "portfolio-project",
   "version": "1.0.0",
   "desription": "e-commerce site for houseplants",
-  "main": "florahome.html",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error no test specified\" && exit 1",
+    "lite": "lite-server",
     "start": "npm run lite",
-    "lite": "lite-server"
-  }
+    "test": "echo \"Error no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Jennifer Frutos",
+  "license": "",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
   "dependencies": {
     "bootstrap": "^5.1.3",
     "bootstrap-social": "^5.1.1",
@@ -15,8 +23,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "popper": "^1.0.1"
-  },
-  "devDependencies": {
-    "lite-server": "^2.6.1"
   }
+  
 }
