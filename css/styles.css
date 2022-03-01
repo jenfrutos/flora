@@ -1,0 +1,16 @@
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+    background: rgb(176, 235, 176);
+}
+.rotate {
+    transform: rotate(90deg);
+}
+.img-resize {
+    width: 700px;
+    height: 500px;
+    object-fit: scale-down;
+}
+h1 {
+    text-align: center;
+}

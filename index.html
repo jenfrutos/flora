@@ -11,9 +11,65 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="css/styles.css" />
 
+        <title>Flora</title>
     </head>
-    <body>
+    <body class="bg-warning">
+        <header class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-3">flora in cute font</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="featuredPlants" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#featuredPlants" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#featuredPlants" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#featuredPlants" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/annie-spratt-ncQ2sguVlgo-unsplash.jpg" class="d-block w-100 img-resize img-fluid" alt="Succulents-Photo by Annie Spratt">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Succulents</h5>
+                                <p>Hardly thirsty</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/gaelle-marcel-yO9ZVNFbpao-unsplash.jpg" class="d-block w-100 img-resize img-fluid" alt="Cactus-Photo by Gaelle Marcel">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Practically Unkillable</h5>
+                                <p>Prickly and cute</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/kelsey-brown-S_J4FRUo5ZQ-unsplash.jpg" class="d-block w-100 img-resize img-fluid" alt="Pothos in gold pot-Photo by Kelsey Brown">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>Bring Life to Any Room</h5>
+                                <p>Add color with the Pothos plant</p>
+                            </div>
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#featuredPlants" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#featuredPlants" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -30,6 +86,13 @@
 
                 </div>
             </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Sign up for newsletter banner</p>
+                </div>
+             </div>
         </div>
     </body>
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
