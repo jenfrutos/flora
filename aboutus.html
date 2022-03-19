@@ -15,7 +15,7 @@
 
         <title>Flora</title>
     </head>
-    <body>
+    <body class="d-flex flex-column h-100">
         <header class="jumbotron">
             <div class="container">
                 <div class="row">
@@ -26,7 +26,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><i class="fa-brands fa-pagelines fa-2x" aria-hidden="true"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#floraNav" aria-controls="floraNav" aria-expanded="false" aria-label="toggle-navigation">
@@ -47,6 +47,8 @@
                           <a class="nav-link active" aria-current="page" href="#">About Us</a>
                         </li>
                     </ul>
+                    <div><a class="btn" role="button"><i class="fa-solid fa-user"></i></a></div>
+                    <div><a class="btn" role="button"><i class="fa-solid fa-cart-shopping"></i></a></div>
                     <form class="d-flex">
                         <input class="form-control-sm me-2" type="search" id="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -55,62 +57,81 @@
             </div>
         </nav>
 
-        <div class="container">
+
+    <main class="flex-shrink-0">
+        <div class="container pb-lg-3">
             <div class="row">
                 <div class="col">
                     <h1>A Little About Us</h1>
                 </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mx-auto h-100 mb-3">
                 <div class="row">
-                    <div class="col-4">
-                        <img class="w-100 rounded" src="img/daniel-oberg-sEApBUS4fIk-unsplash.jpg" alt="seedlings-photo by Daniel Oberg">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Nonsense</h5>
-                            <p class="card-text">blah blah blah</p>
-                        </div>
+                    <div class="col">
+                        <img class="float-start pe-3 rounded" width="250" height="250" src="img/daniel-oberg-sEApBUS4fIk-unsplash.jpg" alt="seedlings-photo by Daniel Oberg">
+                        <h5 class="card-title">We Started Small</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim velit nec laoreet euismod. Nullam in risus eu lorem ornare laoreet. Maecenas eleifend quam et nisl ornare pretium. Aliquam sit amet venenatis arcu. Pellentesque dapibus, metus id consequat venenatis, neque nulla ullamcorper leo, sed lobortis odio lacus eget felis. Proin.</p>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3">
+            <div class="card mx-auto h-100 mb-3">
                 <div class="row">
-                    <div class="col-8">
-                        <div class="card-body">
-                            <h5>header for more nonsense</h5>
-                            <p class="card-text">blah blah blah</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <img class="w-100 rounded" src="img/daniel-oberg-sEApBUS4fIk-unsplash.jpg">
+                    <div class="col">
+                        <img class="float-end ps-3 rounded" width="275" height="200" src="img/tim-mossholder-qvWnGmoTbik-unsplash.jpg">
+                        <h5 class="card-title">Support Small Businesses From Anywhere</h5>
+                        <p class="card-text">Nam convallis interdum enim id fermentum. Vivamus ut nisi id tortor bibendum consectetur. Phasellus nec justo risus. Vestibulum eget orci libero. Quisque pulvinar turpis est, ut sodales dui fringilla eget. Quisque eros urna, finibus a eros eu, ultricies venenatis elit. Quisque lectus augue, vehicula sit amet ullamcorper in, egestas sed felis. Ut pharetra semper tortor finibus porta. Aenean dictum ex nec tellus molestie, sed rutrum est accumsan. Morbi accumsan blandit vulputate. Vivamus lectus lectus, sagittis.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 offset-sm-4 ml-auto">
-                        <ul class="list-unstyled">
-                            <li><a href="aboutus.html" class="text-white">about us</a></li>
-                            <li><a href="https://www.nrdc.org/" class="text-white">NRDC</a></li>
-                        </ul>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Company</li>
+                        <li><a href="aboutus.html" class="text-white">about us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Corporate Orders</a></li>
+                        <li><a href="https://www.nrdc.org/" class="text-white">NRDC</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Support</li>
+                        <li><a href="#" class="text-white">Help/FAQ</a></li>
+                        <li><a href="#" class="text-white">Track your Order</a></li>
+                        <li><a href="#" class="text-white">Shipping</a></li>
+                        <li><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="socialIcons col-sm">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-unstyled">
+                                <li class="text-white">Plant Care</li>
+                                <li><a href="#" class="text-white">Plant Lookup</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-sm-2 offset-sm-2">
-                        <a role="button" class="btn" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a role="button" class="btn" href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a role="button" class="btn" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                        <a role="button" class="btn" href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                    <div class="row">
+                        <div class="col-12">
+                            <a role="button" class="px-1" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a role="button" class="px-1" href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a role="button" class="px-1" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a role="button" class="px-1" href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

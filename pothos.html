@@ -1,39 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link href="sticky-footer.css" rel="stylesheet">
 
         <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Bad+Script" />
+        <link rel="stylesheet" href="css/styles.css" />
 
+        <title>Flora</title>
     </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>Top Sellers</p>
+    <body class="d-flex flex-column h-100">
+            <header class="jumbotron">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="index.html" role="button"><h1 class="display-3">flora</h1></a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>cards of image with pricing. possibly 3 or 4</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+            </header>
 
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><i class="fa-brands fa-pagelines fa-2x" aria-hidden="true"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#floraNav" aria-controls="floraNav" aria-expanded="false" aria-label="toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="floraNav">
+                    <ul class="navbar-nav me-auto m-auto mb-2 ">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Plants</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link disabled">Gifts</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link disabled">Sale</a>
+                            </li>
+                            <li class="nav-item px-3">
+                            <a class="nav-link disabled">Subscriptions</a>
+                            </li>
+                    </ul>
+                    <div>
+                        <a class="btn" role="button"><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="pe-3">
+                        <a class="btn position-relative" role="button"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">1<span class="visually-hidden">items in cart</span></a>
+                    </div>
+                    <div>
+                        <form class="d-flex">
+                            <input class="form-control-sm me-2" type="search" id="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <main class="flex-shrink-0">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col">
+                    <img src="img/kevin-lessy-aKqw_M1CmfI-unsplash.jpg" class="item-image">
+                </div>
+                <div class="col">
+                    <div id="itemOptions" class="row">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h3>Hanging Pothos</h3>
+                                    <p class="fs-1">$50<span class="fs-6 fw-lighter">+ Tax</span></h3>
+                                    <div class="card-text">
+                                        <p>Bring color to any room with the hanging Pothos. A great starter plant for most.</p>
+                                        <div>
+                                            <form class="row">
+                                                <div class="col-12">
+                                                    <h5>Choose a pot color:</h5>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="radio" class="btn-check" name="color" value="black" id="black" autocomplete="off" checked>
+                                                    <label class="btn btn-outline-dark" for="black">Black</label>
+
+                                                    <input type="radio" class="btn-check" name="color" value="white" id="white" autocomplete="off">
+                                                    <label class="btn btn-outline-secondary" for="white">White</label>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 p-3">
+                                                    <label for="quantity" sr-only="quantity" class="my-auto pe-1">Qty:</label>
+                                                    <input type="number" class="form-control" name="quantity" value="1" min="0">
+                                                </div>
+                                                <button class="btn btn-success mt-3">Add to Cart</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row px-4 itemSpecifications">
+                        <div class="col-4">
+                            <a data-bs-toggle="collapse" href="#lighting" role="button" aria-expanded="false" aria-controls="lighting"><i class="fa-solid fa-sun fa-5x"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a data-bs-toggle="collapse" href="#watering" role="button" aria-expanded="false" aria-controls="watering"><i class="fa-solid fa-droplet fa-5x"></i>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a data-bs-toggle="collapse" href="#petFriendly" role="button" aria-expanded="false" aria-controls="petFriendly"><i class="fa-solid fa-paw fa-5x"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-3 pb-5">
+                        <div class="collapse" id="lighting">
+                            <div class="card card-body">
+                                This plant prefers bright, indirect light, but can live in medium and low light.
+                            </div>
+                        </div>
+                        <div class="collapse" id="watering">
+                            <div class="card card-body">
+                                Requires water every 1-2 weeks.
+                            </div>
+                        </div>
+                        <div class="collapse" id="petFriendly">
+                            <div class="card card-body">
+                                You don't have to worry about your furry friends, because this plant is pet-friendly!
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Company</li>
+                        <li><a href="aboutus.html" class="text-white">about us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Corporate Orders</a></li>
+                        <li><a href="https://www.nrdc.org/" class="text-white">NRDC</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Support</li>
+                        <li><a href="#" class="text-white">Help/FAQ</a></li>
+                        <li><a href="#" class="text-white">Track your Order</a></li>
+                        <li><a href="#" class="text-white">Shipping</a></li>
+                        <li><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="socialIcons col-sm">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-unstyled">
+                                <li class="text-white">Plant Care</li>
+                                <li><a href="#" class="text-white">Plant Lookup</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a role="button" class="px-1" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a role="button" class="px-1" href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a role="button" class="px-1" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a role="button" class="px-1" href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

@@ -1,0 +1,3 @@
+$(function() {
+    $('#promotionModal').modal('show');
+})

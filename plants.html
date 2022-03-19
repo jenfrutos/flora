@@ -15,7 +15,7 @@
 
         <title>Flora</title>
     </head>
-    <body>
+    <body class="d-flex flex-column h-100">
         <header class="jumbotron">
             <div class="container">
                 <div class="row">
@@ -26,7 +26,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><i class="fa-brands fa-pagelines fa-2x" aria-hidden="true"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#floraNav" aria-controls="floraNav" aria-expanded="false" aria-label="toggle-navigation">
@@ -50,6 +50,8 @@
                             <a class="nav-link disabled">Subscriptions</a>
                           </li>
                     </ul>
+                    <div><a class="btn" role="button"><i class="fa-solid fa-user" aria-hidden="true"></i></a></div>
+                    <div><a class="btn" role="button"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a></div>
                     <form class="d-flex">
                         <input class="form-control-sm me-2" type="search" id="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -57,71 +59,110 @@
                 </div>
             </div>
         </nav>
-
+    <main class="flex-shrink-0">
+        <div>
+            <h1>Shop All</h1>
+        </div>
         <!--card content-->
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="items" class="container p-md-4 p-lg-5">
+            <div class="h-50 row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <a href="pothos.html">
+                        <img src="img/kevin-lessy-aKqw_M1CmfI-unsplash.jpg" class="card-img-top" alt="hanging Pothos-phot by Kevin Lessy">
+                        <div class="card-body">
+                        <h5 class="card-title">Hanging Pothos</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card h-100">
+                    <img src="img/linh-le-Ebwp2-6BG8E-unsplash.jpg" class="card-img-top" alt="plants in wooden vases-photo by Linh Le">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Cast-Iron Plants</h5>
+                    <p class="card-text">This is a short card .</p>
                     </div>
                 </div>
                 </div>
                 <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/jonathan-borba-af7c0GwLsGU-unsplash.jpg" class="card-img-top" alt="Snake Plant-photo by jonathan Borba">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a short card.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col">
-                <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Snake Plant</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
                 </div>
                 </div>
                 <div class="col">
                 <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/mathias-p-r-reding-WPZlpwJx0Lk-unsplash.jpg" class="card-img-top" alt="Cactus-photo by Mathias P. R. Reding">
                     <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Small Cactus</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
                 </div>
                 </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/brina-blum-wATDAuB4Gto-unsplash.jpg" class="card-img-top" alt="photo by Brina Blum">
+                        <div class="card-body">
+                        <h5 class="card-title">Farmhouse Plant</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 offset-sm-4 ml-auto">
-                        <ul class="list-unstyled">
-                            <li><a href="aboutus.html" class="text-white">about us</a></li>
-                            <li><a href="https://www.nrdc.org/" class="text-white">NRDC</a></li>
-                        </ul>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Company</li>
+                        <li><a href="aboutus.html" class="text-white">about us</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">Corporate Orders</a></li>
+                        <li><a href="https://www.nrdc.org/" class="text-white">NRDC</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm ml-auto">
+                    <ul class="list-unstyled">
+                        <li class="text-white">Support</li>
+                        <li><a href="#" class="text-white">Help/FAQ</a></li>
+                        <li><a href="#" class="text-white">Track your Order</a></li>
+                        <li><a href="#" class="text-white">Shipping</a></li>
+                        <li><a href="#" class="text-white">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="socialIcons col-sm">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-unstyled">
+                                <li class="text-white">Plant Care</li>
+                                <li><a href="#" class="text-white">Plant Lookup</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-sm-2 offset-sm-2">
-                        <a role="button" class="btn" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a role="button" class="btn" href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a role="button" class="btn" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-                        <a role="button" class="btn" href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                    <div class="row">
+                        <div class="col-12">
+                            <a role="button" class="px-1" href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                            <a role="button" class="px-1" href="http://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a role="button" class="px-1" href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                            <a role="button" class="px-1" href="http://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
